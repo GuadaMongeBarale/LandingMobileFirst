@@ -1,10 +1,16 @@
 .main-tables-container{
     display: flex;
+    justify-content: center;
     width:930px;
     margin: 0 auto;
-
 }
-.product-cards--container{
+.main-commissions-table {
+    display: block;
+}
+.currency-table__button {
+    display: none;
+}
+.product-cards__container{
     display: flex;
     flex-wrap: wrap; /* para que no desborde */
     width:930px;
@@ -14,21 +20,58 @@
 .bitcoin-img-container {
     background-image: url("../assets/img/bitcoinbaby2x.jpg");
 
-  }
-  .bitcoin-img-container h2{
+}
+
+.bitcoin-img-container h2{
     font-size: 3.7rem;
+}
 
-  }
-
-
-.plans--title h2{
+.plans__title h2{
     font-size: 3rem;
 }
-.plans--title p{
-    font-size:1.5rem;
+.plans__title p{
+    font-size:1.8rem;
+}
+
+.plans-container__cards {
+    gap: 0;
+    justify-content: space-between;
+}
+.plans-container__cards::-webkit-scrollbar {
+    display: none;  
+}
+
+.plan-card__ca:hover {
+        background: var(--black);
+        color: var(--off-white);
+}
+footer {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100px;
+}
+.left {
+    order: 1;
+}
+.left a {
+    cursor: pointer;
+}
+.left a:hover {
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.right {
+    order: 3;
+}
+.section-created {
+    place-self: center;
+    order:2;
+    height: auto;
+}
+.section-created p {
+    font-weight: bold;
 }
 
 
-.plans-container--slider{
-    justify-content:center;
-}
